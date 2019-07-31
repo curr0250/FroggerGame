@@ -1,5 +1,7 @@
 # Classic Arcade Game Clone Project
 
+This game is a basic version of frogger. The goal is to get your player from the grass across the road to the river without getting crushed by a bug.
+
 ## Table of Contents
 
 - [Instructions](#instructions)
@@ -7,14 +9,24 @@
 
 ## Instructions
 
-Use this [rubric](https://review.udacity.com/#!/rubrics/15/view) for self-checking your submission.
+Clone the github repository and install. Game is best played using a screen size of a tablet or larger and using Chrome.
 
-Make sure the functions you write are **object-oriented** - either class functions (like `Player` and `Enemy`) or class prototype functions such as `Enemy.prototype.checkCollisions`. Also make sure that the keyword `this` is used appropriately within your class and class prototype functions to refer to the object the function is called upon.
+$ git clone https://github.com/curr0250/FroggerGame.git
 
-Your **README.md** file should be updated with instructions on both how to 1. Run and 2. Play your arcade game.
+## How to Play
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+Using the arrow keys, move your hero from the grass to the safety of the water without getting crushed by a bug. You can move up, down, left or right. You get unlimited tries to get your hero across, but with each loss, somewhere a fairy falls down dead, so try your best.
 
-## Contributing
+## Contributing Authors
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+* **Jody Curry**
+
+## Built With
+
+* HTML
+* CSS
+* Javascript -ES6
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details

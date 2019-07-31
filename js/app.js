@@ -6,6 +6,7 @@ var Enemy = function(x, y, speed) {
     //x posn
     //y posn
     //starting speed
+    //enemies go off the screen, players do not
     
     this.x = x;
     this.y = y + 60; //center on first row of stones
@@ -78,18 +79,26 @@ class Player {
         this.startY = (this.go * 4) + 60;
         this.y = this.startY;
         this.x = this.startX;
+       
     }
     update(){
         // check collision here
         for(let enemy of allEnemies) {
+            //did player's x and y collide with enemy?
             if(this.y === enemy.y && (enemy.x + enemy.side/2 > this.x && enemy.x < this.x + this.side/2) ) {
-               alert('collide!'); 
+               this.reset(); 
             }
           
         }
-                    //did player's x and y collide with enemy?
-                // check for win here
-                    //did player's x and y reach final row?
+        // check for win here
+        //did player's x and y reach final row?
+        //console.log(this.y);
+        if(this.y === -23){
+            setTimeout(function(){ alert('You won! You made it safely across!'); }, 0.0001);
+             this.reset();
+          
+        }
+         
     }
     
     // Draw player to screen at current x and y coord
@@ -121,6 +130,12 @@ class Player {
                 }
                 break;
         }
+    }
+    
+    reset() {
+        //set player to starting x and y
+        this.x = this.startX;
+        this.y = this.startY;
     }
 };
 
