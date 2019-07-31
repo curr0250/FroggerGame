@@ -13,6 +13,8 @@ Clone the github repository and install. Game is best played using a screen size
 
 $ git clone https://github.com/curr0250/FroggerGame.git
 
+Open index.html and open in browser
+
 ## How to Play
 
 Using the arrow keys, move your hero from the grass to the safety of the water without getting crushed by a bug. You can move up, down, left or right. You get unlimited tries to get your hero across, but with each loss, somewhere a fairy falls down dead, so try your best.
